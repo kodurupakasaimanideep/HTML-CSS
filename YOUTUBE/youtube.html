@@ -14,8 +14,7 @@
         }
 
     .thumbnail{
-     width:300px;
-     display: block;
+   width: 100%;
 }
 
 .search-bar{
@@ -30,22 +29,10 @@ display: block;
     margin-bottom: 13px;
 }
 
-.video-preview{
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 15px;
-}
-.channel-photos{
-    display: inline-block;
-    width: 50px;
-    vertical-align: top;
-}
 
-
-.video-info{
- display: inline-block; 
- width: 200px;
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
 
 .profile-picture{
@@ -65,21 +52,30 @@ display: block;
 .video-author{
     margin-bottom: 4px;
 }
+.video-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 16px;
+row-gap: 40px ;
+}
 
         </style>  
       </head>
     <body>
         <input class="search-bar" type="text" placeholder="search">
 
+<div class="video-grid">
+
 <div class="video-preview">
 <div class="thumbnail-row">
     <img class="thumbnail" src="thumbnails/thumbnail-1.webp"> 
 </div>
-<div>
+<div class="video-info-grid">
+
     <div class="channel-photos">
       <img class="profile-picture" src="channel photos/channel-1.jpeg">
     </div>
-<div class="video-info">
+    <div class="video-info">
  <p class="video-title">
 Talking Tech and AI with Google CEO Sundar 
 Pichai!
@@ -94,14 +90,12 @@ Marques Brownlee
 </div>
 </div>
 
-    </body>
-</html>
 
 <div class="video-preview">
 <div class="thumbnail-row">
     <img class="thumbnail" src="thumbnails/thumbnail-2.webp"> 
 </div>
-<div>
+<div class="video-info-grid">
     <div class="channel-photos">
       <img class="profile-picture" src="channel photos/channel-2.jpeg">
     </div>
@@ -116,8 +110,103 @@ Markiplier
 19M views &#183; 4 yeras ago
 </p>
     </div>
+    </div>
+</div>
+
+
+
+<div class="video-preview">
+<div class="thumbnail-row">
+    <img class="thumbnail" src="thumbnails/thumbnail-3.webp"> 
+</div>
+<div class="video-info-grid">
+
+    <div class="channel-photos">
+      <img class="profile-picture" src="channel photos/channel-3.jpg">
+    </div>
+    <div class="video-info">
+ <p class="video-title">
+The Geography of India Explained
+</p>
+<p class="video-author">
+FactSpark   
+</p>
+<p class="video-stats">
+1.7M views &#183; 1 year ago
+</p>
+    </div>
 </div>
 </div>
 
-    </body>
+<div class="video-preview">
+<div class="thumbnail-row">
+    <img class="thumbnail" src="thumbnails/thumbnail-4.webp"> 
+</div>
+<div class="video-info-grid">
+    <div class="channel-photos">
+      <img class="profile-picture" src="channel photos/channel-4.jpeg">
+    </div>
+<div class="video-info">
+ <p class="video-title">
+
+The Simplest Math Problem No One Can Solve - Collatz Conjecture
+</p>
+<p class="video-author">
+Veritasium
+</p>
+<p class="video-stats">
+18M views &#183; 4 yeras ago
+</p>
+    </div>
+    </div>
+</div>
+
+<div class="video-preview">
+<div class="thumbnail-row">
+    <img class="thumbnail" src="thumbnails/thumbnail-5web.avif"> 
+</div>
+<div class="video-info-grid">
+
+    <div class="channel-photos">
+      <img class="profile-picture" src="channel photos/channels4_profile.jpg">
+    </div>
+    <div class="video-info">
+ <p class="video-title">
+Virat Kohli Motivation Interview |King Kohli| English Motivational Videos
+
+</p>
+<p class="video-author">
+English Motivational Videos
+</p>
+<p class="video-stats">
+2.1M views &#183; 3 months ago
+</p>
+    </div>
+</div>
+</div>
+
+<div class="video-preview">
+<div class="thumbnail-row">
+    <img class="thumbnail" src="thumbnails/thumbnail-6.webp"> 
+</div>
+<div class="video-info-grid">
+    <div class="channel-photos">
+      <img class="profile-picture" src="channel photos/channel-6.jpeg">
+    </div>
+<div class="video-info">
+ <p class="video-title">
+Anything You Can Fit In The Circle I’ll Pay For
+</p>
+<p class="video-author">
+MrBeast
+</p>
+<p class="video-stats">
+141M views &#183; 1 yeras ago
+</p>
+    </div>
+    </div>
+</div>
+</div>
+
+</body>
 </html>
